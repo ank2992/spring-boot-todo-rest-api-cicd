@@ -13,6 +13,6 @@ phases:
     commands:
     - echo Build completed on `date`
     - mvn package
-    - mv target/spring-boot-todo-rest-api-cicd-0.0.1-SNAPSHOT.jar
+    - echo Buid package completion
 
 
