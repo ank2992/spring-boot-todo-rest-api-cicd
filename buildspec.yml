@@ -1,25 +1,24 @@
-version: 0.2
-        
+version: 0.2      
 phases:
   install:
-    on-failure: ABORT | CONTINUE
+    on-failure: ABORT
     runtime-versions:
       java: corretto8
     commands:
       - echo install
       - command
   pre_build:
-    on-failure: ABORT | CONTINUE
+    on-failure: ABORT
     commands:
       - command
       - command
   build:
-    on-failure: ABORT | CONTINUE
+    on-failure: ABORT
     commands:
       - mvn package
       - echo build
   post_build:
-    on-failure: ABORT | CONTINUE
+    on-failure: ABORT
     commands:
       - echo post build
 artifacts:
